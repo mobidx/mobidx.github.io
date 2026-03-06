@@ -39,18 +39,18 @@
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
   :root {
-    --ink: #1b2d3a;
-    --ink-light: #3a5568;
-    --ink-muted: #6b8299;
-    --surface: #f6f3ee;
-    --surface-warm: #ede8e0;
+    --ink: #1a2b3d;
+    --ink-light: #3a4f65;
+    --ink-muted: #6b839b;
+    --surface: #f0f3f7;
+    --surface-warm: #e4e9ef;
     --white: #ffffff;
-    --accent: #2196F3;
-    --accent-light: #64B5F6;
-    --accent-bg: #f0f7fc;
-    --teal: #2a7a6e;
-    --teal-light: #e8f4f2;
-    --border: #d8d2c8;
+    --accent: #1565c0;
+    --accent-light: #4a90d9;
+    --accent-bg: #edf2f8;
+    --red: #c62828;
+    --red-light: #fbe8e8;
+    --border: #cbd4de;
     --serif: 'Roboto', sans-serif;
     --sans: 'Roboto', sans-serif;
   }
@@ -168,7 +168,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #e8eef5 0%, #dce6f0 40%, #d0dde9 70%, #c5d5e3 100%);
+    background: linear-gradient(135deg, #eaf0f7 0%, #dfe8f1 40%, #d4dfeb 70%, #c9d7e5 100%);
     overflow: hidden;
     padding: 4rem 2rem 1.5rem;
   }
@@ -199,13 +199,13 @@
   .hero-badge {
     display: inline-block;
     font-family: var(--sans);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--accent-light);
-    background: rgba(33,150,243,0.15);
-    border: 1px solid rgba(33,150,243,0.25);
+    background: rgba(21,101,192,0.12);
+    border: 1px solid rgba(21,101,192,0.2);
     padding: 0.2em 0.6em;
     border-radius: 100px;
     vertical-align: middle;
@@ -215,7 +215,7 @@
 
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
     color: var(--ink);
     line-height: 1.4;
     letter-spacing: 0;
@@ -226,16 +226,6 @@
   .hero h1 em {
     font-style: italic;
     color: rgb(4, 105, 188);
-  }
-
-  .hero-sub {
-    font-family: var(--serif);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    color: #fff;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.5rem;
   }
 
   .hero-meta {
@@ -277,11 +267,11 @@
   }
 
   .section-label {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--red);
     margin-bottom: 0.75rem;
   }
 
@@ -319,17 +309,17 @@
   .section--teal p { color: rgba(255,255,255,0.75); }
 
   .section--blue {
-    background: linear-gradient(135deg, #1565C0 0%, #1e88e5 50%, #2196F3 100%);
+    background: linear-gradient(135deg, #2c5f8a 0%, #3a7cb8 50%, #4a8ec5 100%);
     color: #fff;
   }
   .section--blue .section-title { color: #fff; }
-  .section--blue p { color: rgba(255,255,255,0.8); }
+  .section--blue p { color: rgba(255,255,255,0.85); }
   .section--blue .submit-btn {
-    background: #fff;
-    color: var(--accent);
+    background: #c62828;
+    color: #fff;
   }
   .section--blue .submit-btn:hover {
-    background: rgba(255,255,255,0.85) !important;
+    background: #d32f2f !important;
   }
 
   /* ── LETTER ── */
@@ -385,6 +375,7 @@
     box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   }
 
+
   .goal-num {
     font-family: var(--serif);
     font-size: 1.8rem;
@@ -430,17 +421,17 @@
   }
 
   .sub-type-detail {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--ink-muted);
   }
 
   .sub-type-pages {
     display: inline-block;
     margin-top: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    color: var(--teal);
-    background: var(--teal-light);
+    color: var(--red);
+    background: var(--red-light);
     padding: 0.2rem 0.65rem;
     border-radius: 100px;
   }
@@ -481,7 +472,7 @@
   }
 
   .dates-table tr {
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
   }
 
   .dates-table td {
@@ -491,7 +482,7 @@
 
   .dates-table td:first-child {
     font-weight: 600;
-    color: #fff;
+    color: rgba(255,255,255,0.9);
     width: 55%;
     padding-right: 2rem;
   }
@@ -520,7 +511,7 @@
   }
 
   .submit-btn:hover {
-    background: #4caf50 !important;
+    background: #1976d2 !important;
   }
 
   .submit-btn svg {
@@ -544,7 +535,7 @@
   }
 
   .schedule-block:hover {
-    background: rgba(33,150,243,0.06);
+    background: rgba(21,101,192,0.05);
     transform: translateX(0px);
   }
 
@@ -557,7 +548,7 @@
     width: 110px;
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--red);
     padding-top: 0.15rem;
   }
 
@@ -576,7 +567,7 @@
 
   .schedule-tag {
     display: inline-block;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -585,11 +576,11 @@
     margin-bottom: 0.15rem;
   }
 
-  .tag-keynote { background: rgba(33,150,243,0.12); color: var(--accent); }
-  .tag-paper { background: var(--teal-light); color: var(--teal); }
-  .tag-panel { background: rgba(107,130,153,0.15); color: var(--ink-light); }
-  .tag-social { background: rgba(33,150,243,0.08); color: var(--accent-light); }
-  .tag-discussion { background: rgba(42,122,110,0.12); color: var(--teal); }
+  .tag-keynote { background: rgba(21,101,192,0.1); color: var(--accent); }
+  .tag-paper { background: var(--red-light); color: var(--red); }
+  .tag-panel { background: rgba(107,131,155,0.12); color: var(--ink-light); }
+  .tag-social { background: rgba(21,101,192,0.06); color: var(--accent-light); }
+  .tag-discussion { background: rgba(198,40,40,0.08); color: var(--red); }
 
   /* ── CHALLENGES ── */
   .challenges-list {
@@ -600,8 +591,8 @@
   }
 
   .challenge-item {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 10px;
     padding: 0.75rem 1rem;
     transition: background 0.1s, transform 0.1s;
@@ -609,7 +600,7 @@
   }
 
   .challenge-item:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.14);
     transform: translateX(0px);
   }
 
@@ -623,7 +614,7 @@
 
   .challenge-item p {
     font-size: 0.85rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.65);
     margin: 0;
   }
 
@@ -661,7 +652,7 @@
   }
 
   .organizer-card .org-role {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     color: var(--accent);
     font-weight: 600;
     text-transform: uppercase;
@@ -670,7 +661,7 @@
   }
 
   .organizer-card .org-affil {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--ink-muted);
     margin-bottom: 0.35rem;
   }
@@ -687,7 +678,7 @@
   }
 
   .organizer-card p.org-bio {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--ink-light);
     text-align: left;
     line-height: 1.6;
@@ -715,12 +706,12 @@
   }
 
   .chair-item p {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--ink-muted);
   }
 
   .chair-item .chair-role {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -730,11 +721,11 @@
 
   /* ── FOOTER ── */
   footer {
-    background: var(--ink);
-    color: rgba(255,255,255,0.5);
+    background: #0a1929;
+    color: rgba(200,215,230,0.6);
     text-align: center;
     padding: 1.25rem 2rem;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
   }
 
   footer a {
@@ -842,8 +833,9 @@
     content: attr(data-tooltip);
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(0.4rem);
+    right: 0;
+    left: auto;
+    transform: translateY(0.4rem);
     background: rgba(0,0,0,0.88);
     color: #fff;
     font-family: var(--sans);
@@ -862,8 +854,9 @@
     content: '';
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-0.35rem);
+    right: 0.3rem;
+    left: auto;
+    transform: translateY(-0.35rem);
     border: 6px solid transparent;
     border-bottom-color: rgba(0,0,0,0.88);
     pointer-events: none;
@@ -939,7 +932,10 @@
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="hero-content">
-    <img src="hero-logo.png" alt="MobiDx" style="max-width:400px;width:80%;height:auto;margin-bottom:0.5rem;">
+    <div style="display:inline-block;position:relative;max-width:400px;width:80%;">
+      <img src="hero-logo.png" alt="MobiDx" style="width:100%;height:auto;margin-bottom:0.5rem;">
+      <span class="dx-tooltip" data-tooltip="Dx = Diagnostics (medical abbreviation)" style="position:absolute;top:0.5rem;right:-1.5rem;display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;border:1.5px solid var(--ink-muted);font-size:11px;font-style:italic;font-family:var(--serif);color:var(--ink-muted);cursor:help;">i</span>
+    </div>
     <h1>1st Workshop on Hot Topics in <br>Mobile and Wireless Systems for Health</h1>
     <div class="hero-meta">
       <div class="hero-meta-item">
@@ -955,7 +951,7 @@
         <span>Co-located with <strong>ACM MobiCom 2026</strong></span>
       </div>
     </div>
-    <a href="https://mobiledx2026.hotcrp.com" class="submit-btn" target="_blank" rel="noopener" style="margin-top:1.5rem;background:#43a047;">
+    <a href="https://mobiledx2026.hotcrp.com" class="submit-btn" target="_blank" rel="noopener" style="margin-top:1.5rem;background:#c62828;">
       Submit Your Paper
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
     </a>
@@ -1048,7 +1044,7 @@
       <p>Submissions must use 10pt font (or larger) and follow ACM double-column guidelines (Letter-sized, 8.5" &times; 11"). Challenge papers must bear a "Challenge:" prefix. Templates available at <a href="http://www.acm.org/publications/proceedings-template">ACM Proceedings Template</a>. All accepted papers will be published as part of the ACM proceedings.</p>
     </div>
 
-    <h3 style="font-size:1rem;margin-top:1rem;margin-bottom:0.5rem;font-weight:600;">Topics of Interest</h3>
+    <h3 style="font-size:1.15rem;margin-top:1rem;margin-bottom:0.5rem;font-weight:600;">Topics of Interest</h3>
     <ul class="topics-grid" style="list-style:none;">
       <li>Contactless physiological sensing (radar, acoustic, cellular ISAC, vision)</li>
       <li>Backscatter and tag-based sensing (RFID, NFC, Van Atta Array, metamaterials)</li>

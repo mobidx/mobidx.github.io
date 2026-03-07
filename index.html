@@ -353,7 +353,7 @@
   /* ── GOALS GRID ── */
   .goals-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -802,7 +802,7 @@
     .topics-grid { columns: 1; }
     .schedule-block { flex-direction: column; gap: 0.5rem; }
     .schedule-time { width: auto; }
-    .goals-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; }
+    .goals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; }
     .submission-types { grid-template-columns: 1fr; }
     .organizers-grid { grid-template-columns: 1fr; }
   }

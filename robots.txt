@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mobidx.github.io/sitemap.xml
+Sitemap: https://mobidx.health/sitemap.xml

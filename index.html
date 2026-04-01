@@ -354,9 +354,13 @@
   /* ── GOALS GRID ── */
   .goals-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
   }
 
   .goal-card {
@@ -992,33 +996,30 @@
       </p>
       <p class="letter-signoff">We look forward to seeing you in Austin,</p>
       <p class="letter-names">Organizers: Justin Chan, Rajalakshmi Nandakumar, and Xiyuxing Zhang</p>
-      <p class="letter-names">Steering committee: Swarun Kumar, Rajesh Balan, TBD, TBD</p>
-    </div>
-
-    <div class="goals-grid">
-      <div class="goal-card">
-        <div class="goal-num">1</div>
-        <h3>Surface Grand Challenges</h3>
-        <p>Identify critical challenges that require coordinated community effort.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">2</div>
-        <h3>Community Whitepaper</h3>
-        <p>Posted to arXiv with all attendees as authors.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">3</div>
-        <h3>Build Community</h3>
-        <p>Seed a community with a distinct identity. Join us at <a href="https://acmmobidx.slack.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">acmmobidx.slack.com</a>.</p>
-      </div>
-      <div class="goal-card">
-        <div class="goal-num">4</div>
-        <h3>Foster Connections</h3>
-        <p>Build serendipitous connections that will serve attendees for years to come.</p>
-      </div>
+      <p class="letter-names">Steering committee: Swarun Kumar, Rajesh Balan</p>
     </div>
 
   </div>
+
+  <div class="goals-grid">
+    <div class="goal-card">
+      <div class="goal-num">1</div>
+      <h3>Surface Grand Challenges</h3>
+      <p>Identify critical challenges that require coordinated community effort.</p>
+    </div>
+
+    <div class="goal-card">
+      <div class="goal-num">2</div>
+      <h3>Build Community</h3>
+      <p>Seed a community with a distinct identity. Join us at <a href="https://acmmobidx.slack.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">acmmobidx.slack.com</a>.</p>
+    </div>
+    <div class="goal-card">
+      <div class="goal-num">3</div>
+      <h3>Foster Connections</h3>
+      <p>Build serendipitous connections that will serve attendees for years to come.</p>
+    </div>
+  </div>
+
 </section>
 
 <!-- CALL FOR PAPERS -->
@@ -1085,19 +1086,15 @@
     <p>All deadlines are Anywhere on Earth (AoE).</p>
     <table class="dates-table">
       <tr>
-        <td>Submission deadline for workshop papers</td>
-        <td>July 10, 2026</td>
+        <td>Paper Submission</td>
+        <td>June 5, 2026</td>
       </tr>
       <tr>
         <td>Notification of acceptance</td>
         <td>July 31, 2026</td>
       </tr>
       <tr>
-        <td>Camera-ready version deadline</td>
-        <td>August 21, 2026</td>
-      </tr>
-      <tr>
-        <td>Workshop date</td>
+        <td>Workshop date (half-day)</td>
         <td>October 30, 2026</td>
       </tr>
     </table>
@@ -1113,7 +1110,7 @@
   <div class="section-inner reveal">
     <!-- <div class="section-label">Program</div> -->
     <h2 class="section-title">Tentative Schedule</h2>
-    <p>MobiDx is a full-day workshop featuring keynotes, paper presentations, a cross-disciplinary panel, and collaborative breakout discussions.</p>
+    <p>MobiDx is a half-day workshop featuring keynotes and paper presentations.</p>
 
     <div class="schedule">
       <div class="schedule-block">
@@ -1154,40 +1151,7 @@
         <div class="schedule-time">11:45 &ndash; 12:30</div>
         <div class="schedule-info">
           <h3>Paper Session 2</h3>
-          <p>Research and challenge paper presentations</p>
-        </div>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-time">12:30 &ndash; 14:00</div>
-        <div class="schedule-info">
-          <h3>Lunch Break</h3>
-        </div>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-time">14:00 &ndash; 15:00</div>
-        <div class="schedule-info">
-          <h3>Cross-Disciplinary Panel Discussion</h3>
-          <p>Experts from engineering, clinical medicine, public health policy, behavioral science, human factors, and regulatory perspectives</p>
-        </div>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-time">15:00 &ndash; 15:30</div>
-        <div class="schedule-info">
-          <h3>Coffee Break</h3>
-        </div>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-time">15:30 &ndash; 17:00</div>
-        <div class="schedule-info">
-          <h3>Grand Challenge Group Discussions</h3>
-          <p>Dagstuhl-style breakout sessions on grand challenges facing the wireless health sensing community</p>
-        </div>
-      </div>
-      <div class="schedule-block">
-        <div class="schedule-time">17:00 &ndash; 17:30</div>
-        <div class="schedule-info">
-          <h3>Group Reports &amp; Closing Remarks</h3>
-          <p>Executive summaries from each group and next steps for the community whitepaper</p>
+          <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>
         </div>
       </div>
     </div>
@@ -1199,7 +1163,7 @@
   <div class="section-inner reveal">
     <!-- <div class="section-label">Group Discussions</div> -->
     <h2 class="section-title">Grand Challenges</h2>
-    <p>Inspired by the Dagstuhl Seminars, participants will split into groups, each tackling a grand challenge facing the wireless health sensing community.</p>
+    <p>Consider writing a Challenge Paper along these topics.</p>
 
     <ul class="challenges-list">
       <li class="challenge-item">
@@ -1257,18 +1221,6 @@
       </div>
     </div>
 
-    <div class="chairs-row">
-      <div class="chair-item">
-        <div class="chair-role">Publication Chair</div>
-        <h4><a href="https://zjendex.github.io/" class="org-link" target="_blank" rel="noopener">Jiangyifei Zhu</a></h4>
-        <p>Carnegie Mellon University</p>
-      </div>
-      <div class="chair-item">
-        <div class="chair-role">Publicity Chair</div>
-        <h4><a href="https://siqizhang9.github.io/" class="org-link" target="_blank" rel="noopener">Siqi Zhang</a></h4>
-        <p>Carnegie Mellon University</p>
-      </div>
-    </div>
   </div>
 </section>
 

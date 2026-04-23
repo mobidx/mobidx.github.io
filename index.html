@@ -729,6 +729,43 @@
     margin-bottom: 0.15rem;
   }
 
+  /* ── TPC ── */
+  .tpc-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .tpc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .tpc-item {
+    padding: 0.5rem 0.25rem;
+    text-align: center;
+  }
+
+  .tpc-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+
+  .tpc-affil {
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    line-height: 1.35;
+  }
+
   /* ── FOOTER ── */
   footer {
     background: #0a1929;
@@ -811,6 +848,7 @@
     .goals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; }
     .submission-types { grid-template-columns: 1fr; }
     .organizers-grid { grid-template-columns: 1fr; }
+    .tpc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   }
 
 
@@ -1219,6 +1257,54 @@
         <h3><a href="https://zx-explorer.github.io/" class="org-link" target="_blank" rel="noopener">Xiyuxing Zhang</a></h3>
         <div class="org-role">Co-organizer</div>
         <div class="org-affil">Tsinghua University</div>
+      </div>
+    </div>
+
+    <h3 class="tpc-title">Technical Program Committee</h3>
+    <div class="tpc-grid">
+      <div class="tpc-item">
+        <div class="tpc-name">Dong Ma</div>
+        <div class="tpc-affil">Cambridge</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Jingping Nie</div>
+        <div class="tpc-affil">UNC Chapel Hill</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Huining Li</div>
+        <div class="tpc-affil">NC State University</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Longfei Shangguan</div>
+        <div class="tpc-affil">University of Pittsburgh</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Dong Li</div>
+        <div class="tpc-affil">University of Maryland Baltimore County</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Ashutosh Sabharwal</div>
+        <div class="tpc-affil">Rice University</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Sijie Ji</div>
+        <div class="tpc-affil">Caltech</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Bhawana Chhaglani</div>
+        <div class="tpc-affil">UMass Amherst</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Di Duan</div>
+        <div class="tpc-affil">Chinese University of Hong Kong</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Hao Pan</div>
+        <div class="tpc-affil">Shanghai Jiao Tong University</div>
+      </div>
+      <div class="tpc-item">
+        <div class="tpc-name">Tao Chen</div>
+        <div class="tpc-affil">Samsung Research America</div>
       </div>
     </div>
 

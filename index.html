@@ -628,6 +628,73 @@
     margin: 0;
   }
 
+  /* ── KEYNOTES ── */
+  .keynotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .keynote-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .keynote-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .keynote-photo {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--border);
+  }
+
+  .keynote-meta h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+
+  .keynote-meta .keynote-affil {
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    line-height: 1.45;
+  }
+
+  .keynote-section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .keynote-card .keynote-bio,
+  .keynote-card .keynote-abstract {
+    font-size: 0.88rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .keynote-card:hover .org-link {
+    opacity: 0.6;
+  }
+
   /* ── ORGANIZERS ── */
   .organizers-grid {
     display: grid;
@@ -848,6 +915,8 @@
     .goals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; }
     .submission-types { grid-template-columns: 1fr; }
     .organizers-grid { grid-template-columns: 1fr; }
+    .keynotes-grid { grid-template-columns: 1fr; }
+    .keynote-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     .tpc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   }
 
@@ -970,6 +1039,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#dates">Dates</a></li>
+      <li><a href="#keynotes">Keynotes</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#challenges">Grand Challenges</a></li>
       <li><a href="#organizers">Organizers</a></li>
@@ -1144,6 +1214,51 @@
   </div>
 </section>
 
+<!-- KEYNOTES -->
+<section class="section" id="keynotes" style="padding-top:1.5rem;padding-bottom:1.5rem;">
+  <div class="section-inner reveal">
+    <h2 class="section-title">Keynote Speakers</h2>
+
+    <div class="keynotes-grid">
+      <div class="keynote-card">
+        <div class="keynote-header">
+          <img class="keynote-photo" src="pics/chenyang.jpg" alt="Chenyang Lu">
+          <div class="keynote-meta">
+            <h3><a href="https://engineering.washu.edu/faculty/Chenyang-Lu.html" class="org-link" target="_blank" rel="noopener">Chenyang Lu</a></h3>
+            <div class="keynote-affil">Director, AI for Health Institute (AIHealth);<br>Fullgraf Professor, Washington University in St. Louis</div>
+          </div>
+        </div>
+        <div>
+          <div class="keynote-section-label">Bio</div>
+          <p class="keynote-bio">TBD</p>
+        </div>
+        <div>
+          <div class="keynote-section-label">Talk Abstract</div>
+          <p class="keynote-abstract">TBD</p>
+        </div>
+      </div>
+
+      <div class="keynote-card">
+        <div class="keynote-header">
+          <img class="keynote-photo" src="pics/tim.jpg" alt="Tim Weadon">
+          <div class="keynote-meta">
+            <h3><a href="https://www.linkedin.com/in/tweadon/" class="org-link" target="_blank" rel="noopener">Tim Weadon</a></h3>
+            <div class="keynote-affil">Director of Biosensor Health Hardware R&amp;D,<br>Samsung Research America</div>
+          </div>
+        </div>
+        <div>
+          <div class="keynote-section-label">Bio</div>
+          <p class="keynote-bio">TBD</p>
+        </div>
+        <div>
+          <div class="keynote-section-label">Talk Abstract</div>
+          <p class="keynote-abstract">TBD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROGRAM -->
 <section class="section section--alt" id="program" style="padding-top:1.5rem;padding-bottom:1.5rem;">
   <div class="section-inner reveal">
@@ -1153,41 +1268,41 @@
 
     <div class="schedule">
       <div class="schedule-block">
-        <div class="schedule-time">8:30 &ndash; 8:45</div>
+        <div class="schedule-time">1:30 &ndash; 1:45</div>
         <div class="schedule-info">
           <h3>Opening Remarks</h3>
           <p>Welcome and overview of the workshop goals</p>
         </div>
       </div>
       <div class="schedule-block">
-        <div class="schedule-time">8:45 &ndash; 9:30</div>
+        <div class="schedule-time">1:45 &ndash; 2:30</div>
         <div class="schedule-info">
           <h3>Keynote 1</h3>
-          <p>Speaker to be announced</p>
+          <p><a href="https://engineering.washu.edu/faculty/Chenyang-Lu.html" class="org-link" target="_blank" rel="noopener">Chenyang Lu</a>, Director, AI for Health Institute (AIHealth); Fullgraf Professor, Washington University in St. Louis</p>
         </div>
       </div>
       <div class="schedule-block">
-        <div class="schedule-time">9:30 &ndash; 10:30</div>
+        <div class="schedule-time">2:30 &ndash; 3:30</div>
         <div class="schedule-info">
           <h3>Paper Session 1</h3>
           <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>
         </div>
       </div>
       <div class="schedule-block">
-        <div class="schedule-time">10:30 &ndash; 11:00</div>
+        <div class="schedule-time">3:30 &ndash; 4:00</div>
         <div class="schedule-info">
           <h3>Coffee Break</h3>
         </div>
       </div>
       <div class="schedule-block">
-        <div class="schedule-time">11:00 &ndash; 11:45</div>
+        <div class="schedule-time">4:00 &ndash; 4:45</div>
         <div class="schedule-info">
           <h3>Keynote 2</h3>
-          <p>Speaker to be announced</p>
+          <p><a href="https://www.linkedin.com/in/tweadon/" class="org-link" target="_blank" rel="noopener">Tim Weadon</a>, Director of Biosensor Health Hardware R&amp;D, Samsung Research America</p>
         </div>
       </div>
       <div class="schedule-block">
-        <div class="schedule-time">11:45 &ndash; 12:30</div>
+        <div class="schedule-time">4:45 &ndash; 5:30</div>
         <div class="schedule-info">
           <h3>Paper Session 2</h3>
           <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>

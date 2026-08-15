@@ -575,6 +575,36 @@
     margin-bottom: 0;
   }
 
+  .paper-list {
+    list-style: none;
+    margin: 0.4rem 0 0;
+    padding: 0;
+  }
+
+  .paper-list li {
+    position: relative;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--ink);
+    padding-left: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .paper-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .paper-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--red);
+  }
+
   .schedule-tag {
     display: inline-block;
     font-size: 0.7rem;
@@ -1028,11 +1058,6 @@
 </head>
 <body>
 
-<!-- DEADLINE ANNOUNCEMENT BANNER -->
-<div id="deadline-banner" style="background:var(--red);color:#fff;text-align:center;padding:0.6rem 1rem;font-family:var(--serif);font-weight:600;font-size:0.95rem;letter-spacing:0.01em;">
-  📢 Deadline extended! Paper submission is now due <strong>July 10, 2026</strong> (AoE).
-</div>
-
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-inner">
@@ -1290,12 +1315,22 @@
         <div class="schedule-info">
           <h3>Paper Session 1</h3>
           <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>
+          <ul class="paper-list">
+            <li>Continuous Electrocardiogram Monitoring with a Loose T-Shirt</li>
+            <li>Cardiorespiratory Monitoring using RF, Lidar, and Camera: A Comparison with Synchronized Multimodal Measurements</li>
+            <li>NeuroPriv: Adversarial Representation Learning for Privacy in Wearable EEG Systems</li>
+            <li>Energy-Efficient Distributed Nanopore Basecalling for Mobile Edge Health Systems</li>
+          </ul>
         </div>
       </div>
       <div class="schedule-block">
         <div class="schedule-time">3:30 &ndash; 4:00</div>
         <div class="schedule-info">
-          <h3>Coffee Break</h3>
+          <h3>Demos</h3>
+          <ul class="paper-list">
+            <li>DiningMotion: Transforming Everyday Dining Objects into a Hand Movement Monitoring Platform</li>
+            <li>Demonstration of a Jaw-Mounted Inertial Sensor For Eating Behavior Microstructure Characterization</li>
+          </ul>
         </div>
       </div>
       <div class="schedule-block">
@@ -1310,6 +1345,11 @@
         <div class="schedule-info">
           <h3>Paper Session 2</h3>
           <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>
+          <ul class="paper-list">
+            <li>Challenge: Towards UWB-Enabled Spatial Healthcare</li>
+            <li>DrinkLens: Recurring Visual Feature Discovery from In-Situ Drinking Context Photos for Alcohol Use Prediction</li>
+            <li>Personalized Oral Hygiene Framework for Longitudinal Toothbrushing Monitoring in-the-wild</li>
+          </ul>
         </div>
       </div>
     </div>

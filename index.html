@@ -912,46 +912,63 @@
     color: var(--red);
   }
 
-  /* ── BEST PAPER ── */
+  /* ── ABOUT + BEST PAPER ── */
+  .section-inner--wide { max-width: 1200px; }
+  .about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .about-layout .letter { margin-bottom: 0; }
+  .about-side-title {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 0.6rem;
+  }
   .award-card {
     background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--red);
     border-radius: 10px;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-    margin-top: 0.5rem;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
   .award-card .award-title {
     font-family: var(--serif);
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--ink);
     line-height: 1.3;
     margin-bottom: 0.5rem;
   }
-  .section--blue .award-card p { color: var(--ink-light); }
-  .award-card .award-authors { font-size: 0.95rem; margin-bottom: 0.25rem; }
-  .award-card .award-affil { font-size: 0.85rem; margin-bottom: 1rem; }
+  .section .award-card .award-authors { font-size: 0.88rem; margin-bottom: 0.25rem; }
+  .section .award-card .award-affil { font-size: 0.8rem; margin-bottom: 0.75rem; }
   .award-card .award-link {
     color: var(--accent);
     font-weight: 600;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
   .award-card .award-link:hover { text-decoration: underline; }
-
-  .group-photo { margin: 1.5rem 0 0; }
+  .group-photo { margin: 1.25rem 0 0; }
   .group-photo img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   }
   .group-photo figcaption {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.85);
+    font-size: 0.8rem;
+    color: var(--ink-light);
     text-align: center;
     margin-top: 0.5rem;
+  }
+  @media (max-width: 900px) {
+    .about-layout { grid-template-columns: 1fr; }
   }
 
   /* ── CAMERA READY BOX ── */
@@ -1179,8 +1196,9 @@
 
 <!-- ABOUT -->
 <section class="section" id="about" style="padding-top:1.5rem;padding-bottom:2rem;">
-  <div class="section-inner reveal">
+  <div class="section-inner section-inner--wide reveal">
     <h2 class="section-title">Shaping the Future of Mobile and Wireless Health Systems</h2>
+    <div class="about-layout">
     <div class="letter">
       <p class="letter-salutation">Dear Colleagues,</p>
       <p>
@@ -1208,6 +1226,20 @@
       <p class="letter-names">Organizers: Justin Chan, Rajalakshmi Nandakumar, and Xiyuxing Zhang</p>
       <p class="letter-names">Steering committee: Swarun Kumar, Rajesh Balan</p>
     </div>
+    <aside class="about-side" id="best-paper">
+      <h3 class="about-side-title">Best Paper Award</h3>
+      <div class="award-card">
+        <div class="award-title">Continuous Electrocardiogram Monitoring with a Loose T-Shirt</div>
+        <p class="award-authors">Ho Man Colman Leung, Kyle Tong, Ming Gong, Nam Bui<sup>&dagger;</sup>, Xia Zhou</p>
+        <p class="award-affil">Columbia University; <sup>&dagger;</sup>University of Colorado Denver</p>
+        <a href="mobidx26-papers/mobidx26-paper51.pdf" class="award-link" target="_blank" rel="noopener">Read the paper (PDF) &rarr;</a>
+      </div>
+      <figure class="group-photo">
+        <img src="pics/group-photo-2026.jpg" alt="MobiDx 2026 attendees group photo in Austin, Texas" loading="lazy">
+        <figcaption>MobiDx 2026 attendees, October 30, 2026, Austin, Texas</figcaption>
+      </figure>
+    </aside>
+    </div>
 
   </div>
 
@@ -1230,24 +1262,6 @@
     </div>
   </div>
 
-</section>
-
-<!-- BEST PAPER -->
-<section class="section section--blue" id="best-paper" style="padding-top:1.5rem;padding-bottom:1.5rem;">
-  <div class="section-inner reveal">
-    <h2 class="section-title">Best Paper Award</h2>
-    <p>Congratulations to the winners of the MobiDx 2026 Best Paper Award.</p>
-    <div class="award-card">
-      <div class="award-title">Continuous Electrocardiogram Monitoring with a Loose T-Shirt</div>
-      <p class="award-authors">Ho Man Colman Leung, Kyle Tong, Ming Gong, Nam Bui<sup>&dagger;</sup>, Xia Zhou</p>
-      <p class="award-affil">Columbia University; <sup>&dagger;</sup>University of Colorado Denver</p>
-      <a href="mobidx26-papers/mobidx26-paper51.pdf" class="award-link" target="_blank" rel="noopener">Read the paper (PDF) &rarr;</a>
-    </div>
-    <figure class="group-photo">
-      <img src="pics/group-photo-2026.jpg" alt="MobiDx 2026 attendees group photo in Austin, Texas" loading="lazy">
-      <figcaption>MobiDx 2026 attendees, October 30, 2026, Austin, Texas</figcaption>
-    </figure>
-  </div>
 </section>
 
 <!-- KEYNOTES -->

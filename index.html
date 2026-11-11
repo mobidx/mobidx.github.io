@@ -898,6 +898,47 @@
     margin-bottom: 0.5rem;
   }
 
+  .paper-award {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+    margin-left: 0.35rem;
+    vertical-align: 1px;
+    background: rgba(198,40,40,0.1);
+    color: var(--red);
+  }
+
+  /* ── BEST PAPER ── */
+  .award-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    margin-top: 0.5rem;
+  }
+  .award-card .award-title {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+  .section--blue .award-card p { color: var(--ink-light); }
+  .award-card .award-authors { font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .award-card .award-affil { font-size: 0.85rem; margin-bottom: 1rem; }
+  .award-card .award-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .award-card .award-link:hover { text-decoration: underline; }
+
   /* ── CAMERA READY BOX ── */
   .info-box {
     background: var(--accent-bg);
@@ -1081,6 +1122,7 @@
     </button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#best-paper">Best Paper</a></li>
       <li><a href="#keynotes">Keynotes</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#dates">Dates</a></li>
@@ -1173,6 +1215,20 @@
     </div>
   </div>
 
+</section>
+
+<!-- BEST PAPER -->
+<section class="section section--blue" id="best-paper" style="padding-top:1.5rem;padding-bottom:1.5rem;">
+  <div class="section-inner reveal">
+    <h2 class="section-title">Best Paper Award</h2>
+    <p>Congratulations to the winners of the MobiDx 2026 Best Paper Award.</p>
+    <div class="award-card">
+      <div class="award-title">Continuous Electrocardiogram Monitoring with a Loose T-Shirt</div>
+      <p class="award-authors">Ho Man Colman Leung, Kyle Tong, Ming Gong, Nam Bui<sup>&dagger;</sup>, Xia Zhou</p>
+      <p class="award-affil">Columbia University; <sup>&dagger;</sup>University of Colorado Denver</p>
+      <a href="mobidx26-papers/mobidx26-paper51.pdf" class="award-link" target="_blank" rel="noopener">Read the paper (PDF) &rarr;</a>
+    </div>
+  </div>
 </section>
 
 <!-- KEYNOTES -->
@@ -1334,7 +1390,7 @@
           <p>Research paper presentations (10 min talk + 5 min Q&amp;A each)</p>
           <ul class="paper-list">
             <li>Energy-Efficient Distributed Nanopore Basecalling for Mobile Edge Health Systems<span class="paper-remote">Remote</span></li>
-            <li>Continuous Electrocardiogram Monitoring with a Loose T-Shirt</li>
+            <li>Continuous Electrocardiogram Monitoring with a Loose T-Shirt<span class="paper-award">Best Paper</span></li>
             <li>Cardiorespiratory Monitoring using RF, Lidar, and Camera: A Comparison with Synchronized Multimodal Measurements</li>
             <li>NeuroPriv: Adversarial Representation Learning for Privacy in Wearable EEG Systems</li>
           </ul>
